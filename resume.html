@@ -2,41 +2,53 @@
 <html>
     <head>
         <title>Resume</title>
+        <link href="resstyle.css" rel="stylesheet" type="text/css">
     </head>
-    <body style="background: linear-gradient(to bottom, #feffff 0%,#ddf1f9 35%,#a0d8ef 100%); height: 100%">
-        <h1 style="text-align: center">Resume</h1>
-        <div style="width: 100%">
-            <div style="float: right; border: 1px solid black;
-                     border-radius: 5px; background-color: white;
-                        box-shadow: 10px 5px 5px black;">
-                <h3>Marlin</h3>
+    <body>
+        <div>
+            <h1 class="text-center title">Marlin</h1>
+            <div class="button-group">
+                <a href="https://en.wikipedia.org/wiki/Finding_Nemo" target="_blank"><button class="button">Finding Nemo</button></a>
+                <a href="https://docs.google.com/document/d/1Q9LRjf33HsYI3xCS0UHW9aUxCDfOZMMlqrxOGGQIPxc/view" target="_blank"><button class="button">Instructions</button></a>
+                <a href="https://google.com" target="_blank"><button class="button">Google</button></a>
+            </div>
+            <img src="images/fish.jpg" alt="where is my son" class="image-border portrait">
+            <div class="info-box">
                 <h3>42 Wallaby Way, Sydney</h3>
                 <h3>Fishville FL 80000</h3>
                 <h3>1-800-fish-now</h3>
             </div>
-            <img src="images/fish.jpg" alt="where is my son"
-                 style="border: 1px solid black; 
-                        box-shadow: 10px 5px 5px black;
-                        border-radius: 5px; height: 182px">
         </div>
-            
-        <h2 style="text-align: center">Professional Background</h2>
-        <ul style="padding-left: 350px;">
-            <li>Good fish skills</li>
-            <li>Strong work ethic</li>
-            <li>Turtle connections</li>
-            <li>Good leadership skills</li>
-            <li>Fast swimmer</li>
-            <li>Caring father</li>
+        <br>
+        
+        <h2 class="section-header">Professional Background</h2>
+        <hr>
+        <ul>
+            <li>Excellent fish skills from communicating with a 
+            broad range of different fish ethnicities through my
+            travels in the ocean.</li>
+            <li>Strong work ethic that pushes me to finish every
+            task I take on.</li>
+            <li>Good leadership skills that combines employee satisfaction with meeting goals and deadlines consistently.</li>
         </ul>
         <br>
-        <h2 style="text-align: center">Work History</h2>
-        <ul style="padding-left: 350px;">
-            <li>Volunteer at school</li>
-            <li>Personal Investigator</li>
-            <li>Escape Artist</li>
-        </ul>
+        <h2 class="section-header">Work History</h2>
+        <hr>
         
+        <table>
+            <tr>
+                <td class="table-date">May 2003 - October 2007</td>
+                <td class="table-info">Volunteer at school</td>
+            </tr>
+            <tr>
+                <td class="table-date">October 2007 - November 2008</td>
+                <td class="table-info">Personal Investigator</td>
+            </tr>
+            <tr>
+                <td class="table-date">November 2008 - December 2008</td>
+                <td class="table-info">Escape Artist</td>
+            </tr>
+        </table>
         
     </body>
 </html>
