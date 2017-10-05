@@ -1,11 +1,18 @@
 var randomNum = Math.floor(Math.random() * 10) + 1;
 var paragraph = document.getElementById("result-info");
 var guessDisplay = document.getElementById("guess-info");
-var currentGuess;
+var numInput = document.getElementById("num-input");
+numInput.focus();
 var guessCounter = 0;
 
+document.body.onkeydown = function(e) {
+    if (e.keyCode == 13) {
+        guess();
+    }
+}
+
 function guess() {
-    currentGuess = document.getElementById("num-input").value;
+    var currentGuess = numInput.value;
     guessCounter++;
     guessDisplay.innerHTML = "Guesses: " + guessCounter;
     if (currentGuess > randomNum) {
