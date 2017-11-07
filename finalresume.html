@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Resume</title>
+        <link href="finalresstyle.css" rel="stylesheet" type="text/css">
+        <link href="https://code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css" rel="stylesheet" type="text/css">
+        <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+        <script>
+            $( function() {
+                $("#accordion").accordion( {
+                   collapsible: true
+                }); 
+                $( "#tabs" ).tabs({
+                    event: "mouseover"
+                }).addClass("ui-tabs-vertical ui-helper-clearfix");
+                $( "#tabs li" ).removeClass( "ui-corner-top" ).addClass( "ui-corner-left" );
+            });
+        </script>
+
+    </head>
+    <body>
+        <div>
+            <h1 class="text-center title">Marlin</h1>
+            <div class="button-group">
+                <a href="https://en.wikipedia.org/wiki/Finding_Nemo" target="_blank"><button class="button">Finding Nemo</button></a>
+                <a href="https://docs.google.com/document/d/1Q9LRjf33HsYI3xCS0UHW9aUxCDfOZMMlqrxOGGQIPxc/view" target="_blank"><button class="button">Instructions</button></a>
+                <a href="https://google.com" target="_blank"><button class="button">Google</button></a>
+            </div>
+            <img src="images/fish.jpg" alt="where is my son" class="image-border portrait">
+            <div class="info-box">
+                <div id="tabs">
+                    <ul>
+                        <li><a href="#tabs-1">Address</a></li>
+                        <li><a href="#tabs-2">Phone</a></li>
+                    </ul>
+                    <div id="tabs-1">
+                        <h3>42 Wallaby Way, Sydney</h3>
+                        <h3>Fishville FL 80000</h3>
+                    </div>
+                    <div id="tabs-2">
+                        <h3>1-800-fish-now</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+        <br>
+        <br>
+        <div class="container">
+            <div id="accordion">
+                <h3 class="section-header">Professional Background</h3>
+                <div>
+                    <ul>
+                        <li>Excellent fish skills from communicating with a broad range of different fish ethnicities through my travels in the ocean.</li>
+                        <li>Strong work ethic that pushes me to finish every task I take on.</li>
+                        <li>Good leadership skills that combines employee satisfaction with meeting goals and deadlines consistently.</li>
+                    </ul>
+                </div>
+                <h3 class="section-header">Skills</h3>
+                <div>
+                    <ul>
+                        <li>Excellent swimmer</li>
+                        <li>Great at web design</li>
+                        <li>Detail oriented</li>
+                        <li>Good leadership traits</li>
+                    </ul>
+                </div>
+                <h3 class="section-header">Work History</h3>
+                <div>
+                    <table>
+                        <tr>
+                            <td class="table-date">May 2003 - October 2007</td>
+                            <td class="table-info">Volunteer at school</td>
+                        </tr>
+                        <tr>
+                            <td class="table-date">October 2007 - November 2008</td>
+                            <td class="table-info">Personal Investigator</td>
+                        </tr>
+                        <tr>
+                            <td class="table-date">November 2008 - December 2008</td>
+                            <td class="table-info">Escape Artist</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+        
+        <script type="text/javascript" src="finalresscript.js"></script>
+    </body>
+</html>
